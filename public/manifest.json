@@ -1,0 +1,37 @@
+{
+  "manifest_version": 2,
+  "name": "Chrome",
+  "version": "1.0",
+  "description": "Test",
+  "author": "Rick",
+  "icons": {
+    "16": "logo192.png",
+    "48": "logo192.png",
+    "128": "logo192.png"
+  },
+  "content_scripts": [
+    {
+      "matches": "*",
+      "js": ["injectContent/index.js"]
+    }
+  ],
+  "permissions": [
+    "tabs",
+    "storage",
+    "activeTab",
+    "webRequest",
+    "declarativeContent",
+    "https://*/*"
+  ],
+  "background": {
+    "scripts": ["background/index.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_icon": "logo192.png",
+    "default_title": "Chrome helper",
+    "default_popup": "popup/index.html"
+  },
+  "content_security_policy": "",
+  "web_accessible_resources": ["contentScripts/index.css", "contentScripts/index.js"]
+}

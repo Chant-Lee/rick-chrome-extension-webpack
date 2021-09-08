@@ -1,0 +1,49 @@
+{
+  "name": "rick-chrome-extension-webpack",
+  "version": "1.0.0",
+  "description": "chrome 扩展",
+  "main": "index.js",
+  "scripts": {
+    "start": "ENV=test webpack-dev-server",
+    "start:prd": "ENV=prd webpack-dev-server",
+    "build": "ENV=prd webpack",
+    "commit": "git-cz",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chant-Lee/rick-chrome-extension-webpack.git"
+  },
+  "author": "Rick",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chant-Lee/rick-chrome-extension-webpack/issues"
+  },
+  "homepage": "https://github.com/Chant-Lee/rick-chrome-extension-webpack#readme",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "webpack": "^5.52.0",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-react": "^7.14.5",
+    "@babel/preset-typescript": "^7.15.0",
+    "@types/chrome": "^0.0.157",
+    "@types/react": "^17.0.20",
+    "@types/react-dom": "^17.0.9",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-import": "^1.13.3",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^9.0.1",
+    "css-loader": "^6.2.0",
+    "git-cz": "^4.7.6",
+    "html-webpack-plugin": "^5.3.2",
+    "mini-css-extract-plugin": "^2.2.2",
+    "node-sass": "^6.0.1",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.2.1"
+  }
+}
